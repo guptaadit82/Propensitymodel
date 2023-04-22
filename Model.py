@@ -10,7 +10,7 @@ from sklearn.preprocessing import scale
 from sklearn.metrics import cohen_kappa_score
 from sklearn.preprocessing import scale
 
-df=pd.read_csv("E:\\Data Science\\Data_Science_Projects\\Project_4\\Dataset\\bank-full.csv")
+df=pd.read_csv("bank-full.csv")
 
 df=df.iloc[:,[16,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]]
 
