@@ -23,7 +23,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 
 def predict():
-    df=pd.read_csv("E:\\Data Science\\Data_Science_Projects\\Project_4\\Dataset\\bank-full.csv")
+    df=pd.read_csv("bank-full.csv")
     df=df.iloc[:,[16,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]]
     df=pd.get_dummies(df,columns=['job','marital','education','default','housing','loan','contact','month','poutcome'],drop_first=True)
     from sklearn.model_selection import train_test_split
