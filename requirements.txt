@@ -1,3 +1,5 @@
+gunicorn
+python
 blinker
 catboost
 click
