@@ -49,8 +49,6 @@ def predict():
         output = round(my_prediction[0], 2)
         return render_template('index.html',prediction = output)
 
-if __name__ == '__main__':
-    app.run(debug=True)
 
 
 
