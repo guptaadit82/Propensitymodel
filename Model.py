@@ -26,7 +26,7 @@ X_train,X_test,y_train,y_test=train_test_split(x,y,test_size=0.3)
 
 from imblearn.over_sampling import SMOTE
 
-sm=SMOTE(random_state=444)
+sm=SMOTE(random_state=4)
 X_train_res,y_train_res=sm.fit_resample(X_train,y_train)
 
 X_train_res.shape
