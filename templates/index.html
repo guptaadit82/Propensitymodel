@@ -58,15 +58,15 @@
                     <td><input type="number" id="duration" name="duration" min="80" max="650"></td>
                 </tr>
                 <tr>
-                    <td><label for="campaign">Campaign:</label></td>
+                    <td><label for="campaign">Campaign Day:</label></td>
                     <td><input type="number" id="campaign" name="campaign" min="1" max="63"></td>
                 </tr>
                 <tr>
-                    <td><label for="pdays">Pdays:</label></td>
+                    <td><label for="pdays">Pre-days:</label></td>
                     <td><input type="number" id="pdays" name="pdays" min="-1" max="900"></td>
                 </tr>
                 <tr>
-                    <td><label for="previous">Previous:</label></td>
+                    <td><label for="previous">Previous no of Contacts :</label></td>
                     <td><input type="number" id="previous" name="previous" min="0" max="275"></td>
                 </tr>
                 <tr>
@@ -108,7 +108,7 @@
           </table>
           <button type="submit" class="button-30">Predict</button>
         </form>
-        <h3>Find the result below after 30 secs...</h3>
+        <h3>It could take upto 30 sec to fetch the result ... Please wait </h3>
         <br>
           {% if prediction == 1%}
 	      <h2 style="color:black;">Yes, Customer has Propensity to Buy products and May Subscribe in Future</h2>
